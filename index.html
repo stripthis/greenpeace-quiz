@@ -1,0 +1,51 @@
+<!html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Greenquiz demo</title> 
+  <base href='http://localhost/greenquiz/'> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/greenquiz.css" />  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="greenquiz-wrapper">
+  <div class="greenquiz-wrapper2">
+    <!-- Greenquiz Container-->
+    <div id="greenquiz-js" class="greenquiz"></div>
+    <!-- Greenquiz Templates -->
+    <script id="questionTemplate" type="text/x-jquery-tmpl"> 
+      <div class="question">
+        <span class="sentence">Quizz: ${question}</span>
+      </div>
+      <ul class="answers options"></ul>
+    </script>
+    <script id="answersTemplate" type="text/x-jquery-tmpl"> 
+      <li class="option"><a href="#" id="option${id}" class='button white'>${text}</a></div>
+    </script>
+    <script id="feedbackTemplate" type="text/x-jquery-tmpl">
+      <div class="feedback ${correct}">
+        ${msg}
+        <a href="#" class="nextQuestion">Next Question</a>
+      </div>
+    </script>
+    <script id="finishTemplate" type="text/x-jquery-tmpl">
+      <div class="finish">${message}</div>
+      <div class="score"></div>
+      <span><a href="#" class="restart button green">Restart</a></span>
+    </script>
+    <script id="scoreTemplate" type="text/x-jquery-tmpl"> 
+      <span>you scored: ${currentScore} out of ${maxScore}</span>
+    </script>
+  </div>
+  </div>
+  <div class="footer-content">
+      &nbsp;
+  </div>
+</div>
+<script type="text/javascript" src="js/greenquiz.js"></script>
+</body>
+</html>
