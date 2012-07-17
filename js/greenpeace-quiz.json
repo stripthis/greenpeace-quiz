@@ -4,7 +4,7 @@
     "solution" : "0",
     "feedback" : [
       "Not really, they were called the Don't make a wave comitee. The Don't Make a Wave Committee was founded to halt further underground nuclear testing by the United States in Amchitka.",
-      "All right sparky. Don't boast yourself there is still plenty of question to go"
+      "All right sparky. Don't boast yourself there is still plenty of question to go."
     ],
     "options"  : [
       {"id" : 0, "text" : "Don't make a wave comitee"},
@@ -12,7 +12,7 @@
       {"id" : 2, "text" : "Save our earth"}
     ],
     "image" : [{
-      "url" : "http://localhost/greenquiz/img/quiz-pic02.jpg",
+      "url" : "http://localhost/greenpeace-quiz/img/quiz-pic02.png",
       "alt" : "a picture of a dude"
     }]
   },
@@ -21,7 +21,7 @@
     "solution" : "1",
     "feedback" : [
       "Not really, Greenpeace was founded in 1971. Wasn't this in your history book? Right, maybe not. At least it's in ours.",
-      "All right sparky. I know I wish it was founded in 1968 too. A summer of love baby or something."
+      "That's right. I know it would have been much cooler if it have been founded in 1968. As a baby of the summer of love or something."
     ],
     "options"  : [
       {"id" : 0, "text" : "1968"},
@@ -29,25 +29,37 @@
       {"id" : 2, "text" : "1978"}
     ],
     "image" : [{
-      "url" : "http://localhost/greenquiz/img/quiz-pic01.jpg",
+      "url" : "http://localhost/greenpeace-quiz/img/quiz-pic01.png",
       "alt" : "a dove and a rainbow"
     }]
   }],
-  "finish" : [{
-    "feedback" : [
-      {
-        "threshold" : "0",
-        "text" : "wow, that's really pathetic",
-      },
-      {
-        "threshold" : "1",
-        "text" : "not bad, but your could do better"
-      },      
-      {
-        "threshold" : "2",
-        "text" : "Impressive, I bet you are working for greenpeace!"
-      }
-    ]
-  }]
+  "gameover" : [{
+    "threshold" : 0,
+      "text"   : "Oh boy, let's try again and pretend this never happened!",
+      "social" : "I scored 0/2 in Greenpeace quiz. Wow it's not that easy being green! http://www.greenpeace.org",
+      "image" : [{
+        "url" : "http://localhost/greenpeace-quiz/img/quiz-pic01.png",
+        "alt" : "a dove and a rainbow"
+      }]
+    },
+    {
+      "threshold" : 1,
+      "text" : "Not too bad sparky, but you could use a little bit of cheating!",
+      "social" : "I scored 1/2 in Greenpeace test here, you think you can non-violently beat this? http://www.greenpeace.org",
+      "image" : [{
+        "url" : "http://localhost/greenpeace-quiz/img/quiz-pic02.png",
+        "alt" : "a picture of a dude"
+      }]
+    },
+    {
+      "threshold" : 2,
+      "text" : "Very impressive matey! Come sail with us next time!",
+      "social" : "I scored 2/2 in Greenpeace test here and no, I didn't even cheat! http://www.greenpeace.org",
+      "image" : [{
+        "url" : "http://localhost/greenpeace-quiz/img/quiz-pic03.png",
+        "alt" : "some pretty ruins"
+      }]
+    }
+  ]
 }]
 
